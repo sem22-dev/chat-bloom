@@ -32,9 +32,11 @@ export default function Home() {
             <p className='text-grayText'>
                 Enhance your website's user experience with ChatBloom: 
                 <br />
-                the intelligent chatbot with a talking avatar. Engage visitors, 
+                the intelligent chatbot with a talking avatar.Engage visitors, 
                 <br />
-                provide instant help, and offer exceptional customer support.
+                provide instant help, and offer exceptional customer support."
+                <br />
+                and deliver exceptional customer support like never before.
             </p>
           </div>
           <div className='flex flex-col gap-4 '>
