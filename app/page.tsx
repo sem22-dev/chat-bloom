@@ -15,36 +15,34 @@ export default function Home() {
 
   return (
     <main className=' z-0 px-5 sm:px-6 lg:px-12 xl:px-32 py-12 h-[1000px]'>
-      <div className=' grid grid-cols-1 lg:grid-cols-2'>
+      <div className=' flex flex-col text-center lg:text-left lg:grid lg:grid-cols-2'>
         {/* left */}
         <div className=' title flex flex-col gap-7  font-semibold text-lg'>
           {/* description */}
-          <div>
-            <h1 className=' text-6xl leading-tight font-extrabold'>
-              Presenting the 
-              <br />
-              next-gen Chatbot
-              <br />
-              for your website
+          <div className='' >
+            <h1 className=' text-5xl md:text-6xl leading-tight md:leading-tight  font-extrabold'>
+              Presenting the next-gen Chatbot for your website
             </h1>
           </div>
           <div>
-            <p className='text-grayText'>
+            <p className=' text-grayText text-base sm:text-lg'>
                 Enhance your website's user experience with ChatBloom: 
                 <br />
-                the intelligent chatbot with a talking avatar.Engage visitors, 
+                the intelligent chatbot with a talking avatar. Engage visitors, 
                 <br />
-                provide instant help, and offer exceptional customer support."
-                <br />
-                and deliver exceptional customer support like never before.
+                provide instant help, and offer exceptional customer support.
             </p>
           </div>
-          <div className='flex flex-col gap-4 '>
-            <div className='flex gap-10'>
-              <Link href={'/'}><button className=" bg-black  hover:bg-[#fff] hover:text-black border border-black transition-all duration-500 text-white py-4 px-14 rounded-full font-normal">Get Started for free</button></Link>
+          <div className=' items-center lg:items-start flex flex-col gap-4 '>
+            <div className='flex gap-10 text-base sm:text-lg'>
+              <Link href={'/'}>
+                <button className=" bg-black  hover:bg-[#fff] hover:text-black border border-black transition-all duration-500 text-white py-4 px-6 sm:px-12 rounded-full font-normal">
+                  Get Started <span className=' hidden sm:inline'>for free</span>
+                </button>
+              </Link>
               <Link href={'/pricing'}>
                 <button 
-                  className=" flex items-center gap-2 bg-white hover:-translate-y-2 transition-transform duration-300 border border-black py-4 px-14 rounded-full">
+                  className=" flex items-center gap-2 bg-white hover:-translate-y-2 transition-transform duration-300 border border-black py-4 px-6 sm:px-8 rounded-full">
                     <span>Pricing</span>
                     <Image src={'/arrow.svg'} width={20} height={20} alt='pic' className=' -rotate-45'/>
                 </button>
@@ -57,13 +55,13 @@ export default function Home() {
           </div>
         </div>
         {/* right */}
-        <div className='image'>
-          <Image src={'/pic1.png'} width={1000} height={200} alt='pic' className=' object-fill'/>
+        <div className='image hidden lg:block'>
+          <Image src={'/bot.png'} width={1000} height={200} alt='pic' className=' object-fill'/>
         </div>
       </div>
 
       <div className=' hello pt-32'>
-        Second section
+        {/* Second section */}
       </div>
     </main>
   )

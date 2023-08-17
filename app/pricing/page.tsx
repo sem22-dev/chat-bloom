@@ -17,7 +17,7 @@ export default function Pricing() {
             </div>
             
             {/* pricing plans */}
-            <div className=" flex gap-8 item-center justify-center px-4 py-8">
+            <div className=" grid grid-cols-fluid  gap-8 item-center justify-center px-4 py-8">
                 <Pricingplan 
                     src="/seedling.svg"
                     popularity=""
